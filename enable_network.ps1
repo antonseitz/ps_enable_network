@@ -1,0 +1,2 @@
+Get-NetFirewallProfile -name private | Get-NetFirewallRule | ? DisplayGroup -like "Netzwerkerkennung" | Set-NetFirewallRule -enabled true
+Get-NetFirewallProfile -name private | Get-NetFirewallRule | ? DisplayGroup -like "Datei- und Druckerfreigabe" | Set-NetFirewallRule -enabled true
